@@ -15,7 +15,37 @@ public class PersonneDto {
 
     private String prenom;
 
-    @Column(nullable = false, columnDefinition="DATE")
-    private LocalDate DateDeNaissance;
+    private String DateDeNaissance;
 
+    public String getDateDeNaissance() {
+        return DateDeNaissance;
+    }
+
+    public void setDateDeNaissance(String dateDeNaissance) {
+        DateDeNaissance = dateDeNaissance;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
 }
